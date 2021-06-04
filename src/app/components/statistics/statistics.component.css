@@ -1,0 +1,7 @@
+.mat-row:hover .mat-cell {
+  background-color: lightgray; // Fixme
+}
+
+.mat-row .mat-cell {
+  cursor: pointer;
+}

@@ -1,10 +1,15 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {StatisticsComponent} from "./components/statistics/statistics.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: "**", redirectTo: "stats"},
+  {path: "stats", component: StatisticsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

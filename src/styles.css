@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --white: rgb(255, 255, 255);
+  --defaultBackground: rgb(245, 245, 245);
+  --defaultFontColor: rgb(80, 80, 80);
+
+  --defaultShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  /*
+  --invertedShadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  --defaultBackground: rgb(245, 245, 245);
+  --primaryColorRAW: 2, 161, 226;
+  --primaryColor: rgb(2, 161, 226);
+  --primaryColorHover: rgb(11, 138, 190);
+  --primaryColorHoverLight: rgb(235, 249, 255);
+  --primaryColorActive: rgb(10, 120, 166);
+  --primaryColorDisabled: rgb(171, 171, 171);
+  --secondaryColorRAW: 229, 229, 229;
+  --secondaryColor: rgb(--secondaryColorRAW);
+  --secondaryColorActive: rgb(208, 208, 208);
+  --secondaryColorDisabled: rgb(171, 171, 171);
+  --subtitleColor: rgb(40, 102, 171);
+  --tableOddRow: rgb(249, 249, 249);
+  --greyText: rgb(150, 150, 150);
+  --errorColorRAW: 228, 0, 43; // this is used to give opacity
+  --errorColor: rgb(var(--errorColorRAW));
+  --warningColorRAW: 241, 135, 0; // this is used to give opacity
+  --warningColor: rgb(var(--warningColorRAW));
+  --successColorRAW: 0, 180, 22;
+  --successColor: rgb(var(--successColorRAW));
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --borderRadius: 5px;
+  --inputBorderColor: #ced4da;
+  --backgroundDisabledInput: rgba(204, 204, 204, 0.2);
+  --borderDisabledInput: rgba(204, 204, 204, 0.5);
+  --textColorMuted: #969699;
+  --accent-color: #ffde00;
+  --iconGreyColor: rgba(80, 80, 80, 0.75);
+  --borderColor: rgb(224, 224, 224);
+  --inputBorder: 1px solid var(--inputBorderColor);
+
+  --default-margin: 1.25rem;
+  --small-margin: 0.75rem;
+
+  // width
+  --desktop-layout-width: 80vw;
+  --mobile-layout-width: 95vw; */
+}
+
+body {
+  background-color: var(--defaultBackground);
+  margin: 0;
+  padding: 0;
+  color: var(--defaultFontColor);
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--white);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center-block-with-max-page-width {
+  width: 90vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main-container {
+  margin-top: 1rem;
+  /* background-color: var(--white); */
+}
+
+.default-padding {
+  padding: 1rem;
+}
+
+.default-margin {
+  margin: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
