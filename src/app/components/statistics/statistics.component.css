@@ -1,5 +1,6 @@
 .mat-row:hover .mat-cell {
-  background-color: lightgray; // Fixme
+  /* Fixme */
+  background-color: lightgray;
 }
 
 .mat-row .mat-cell {
