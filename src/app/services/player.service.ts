@@ -3,18 +3,18 @@ import {HttpClient} from "@angular/common/http";
 import {Observable, of} from "rxjs";
 import {PlayerStats} from "../models/playerStats";
 import {catchError} from "rxjs/operators";
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlayerService {
-  private url = 'http://localhost:8080/stats/players'; // Fixme
 
   constructor(private http: HttpClient) {
   }
 
   getAllPlayerStats(): Observable<PlayerStats[]> {
-    return this.http.get<PlayerStats[]>(this.url)
+    return this.http.get<PlayerStats[]>(`${environment.apiUrl}/stats/players`)
       .pipe(
         catchError(this.handleError<PlayerStats[]>('getAllPlayerStats', []))
       );
